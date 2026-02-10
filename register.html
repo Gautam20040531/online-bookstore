@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore - Register</title>
+    <!-- Academic submission: Professional HTML5 code for User Registration Page -->
+</head>
+<body style="background-color: #ffffff; font-family: Arial, sans-serif; color: #333333; margin: 0; padding: 20px;">
+    <!-- Header Section with Title and Navigation -->
+    <header style="background-color: #e6f2ff; padding: 20px; border-bottom: 2px solid #cccccc;">
+        <h1 style="color: #0066cc; text-align: center; margin: 0;">Online Bookstore</h1>
+        <!-- Navigation Menu -->
+        <nav style="text-align: center; margin-top: 20px;">
+            <a href="index.html" style="margin: 0 10px; text-decoration: none; color: #0066cc; font-weight: bold;">Home</a> |
+            <a href="register.html" style="margin: 0 10px; text-decoration: none; color: #0066cc; font-weight: bold;">Register</a> |
+            <a href="login.html" style="margin: 0 10px; text-decoration: none; color: #0066cc; font-weight: bold;">Login</a> |
+            <a href="profile.html" style="margin: 0 10px; text-decoration: none; color: #0066cc; font-weight: bold;">Profile</a> |
+            <a href="catalog.html" style="margin: 0 10px; text-decoration: none; color: #0066cc; font-weight: bold;">Catalog</a> |
+            <a href="cart.html" style="margin: 0 10px; text-decoration: none; color: #0066cc; font-weight: bold;">Cart</a> |
+            <a href="payment.html" style="margin: 0 10px; text-decoration: none; color: #0066cc; font-weight: bold;">Payment</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main style="max-width: 600px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border: 1px solid #cccccc;">
+        <h2 style="color: #0066cc; text-align: center;">User Registration</h2>
+        <p style="text-align: center; font-size: 14px; margin-bottom: 20px;">Create your account to start shopping for books. All fields are required.</p>
+        <!-- Registration Form -->
+        <form id="register-form" style="display: flex; flex-direction: column;">
+            <p id="error-message" style="color: red; text-align: center; display: none;"></p>
+            <label for="fullname" style="margin-bottom: 5px; font-weight: bold;">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required style="padding: 8px; margin-bottom: 15px; border: 1px solid #cccccc; border-radius: 4px;">
+
+            <label for="email" style="margin-bottom: 5px; font-weight: bold;">Email ID:</label>
+            <input type="email" id="email" name="email" required style="padding: 8px; margin-bottom: 15px; border: 1px solid #cccccc; border-radius: 4px;">
+
+            <label for="mobile" style="margin-bottom: 5px; font-weight: bold;">Indian Mobile Number (10 digits):</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required style="padding: 8px; margin-bottom: 15px; border: 1px solid #cccccc; border-radius: 4px;" placeholder="e.g., 9876543210">
+
+            <label for="address" style="margin-bottom: 5px; font-weight: bold;">Address:</label>
+            <textarea id="address" name="address" rows="4" required style="padding: 8px; margin-bottom: 15px; border: 1px solid #cccccc; border-radius: 4px;"></textarea>
+
+            <label for="password" style="margin-bottom: 5px; font-weight: bold;">Password:</label>
+            <input type="password" id="password" name="password" required style="padding: 8px; margin-bottom: 15px; border: 1px solid #cccccc; border-radius: 4px;">
+
+            <label for="confirmpassword" style="margin-bottom: 5px; font-weight: bold;">Confirm Password:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required style="padding: 8px; margin-bottom: 20px; border: 1px solid #cccccc; border-radius: 4px;">
+
+            <button type="submit" style="padding: 10px; background-color: #0066cc; color: #ffffff; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">Register</button>
+        </form>
+        <p style="text-align: center; margin-top: 20px; font-size: 14px;">Already have an account? <a href="login.html" style="color: #0066cc; text-decoration: none;">Login here</a>.</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #e6f2ff; padding: 10px; text-align: center; border-top: 2px solid #cccccc; margin-top: 40px;">
+        <p style="margin: 0; font-size: 14px;">© 2023 Online Bookstore. All rights reserved. Serving readers across India.</p>
+    </footer>
+
+    <script type="module" src="firebase-init.js"></script>
+    <script type="module" src="js/register.js"></script>
+</body>
+</html>
